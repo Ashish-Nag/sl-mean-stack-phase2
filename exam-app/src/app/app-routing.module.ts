@@ -7,6 +7,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { ResultComponent } from './components/result/result.component';
 import { AboutComponent } from './components/about/about.component';
+import { UserListComponent } from './components/user-list/user-list.component';
 
 const routes: Routes = [
   {path: '', component: LandingPageComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'user/exam', component: AssessmentComponent},
   {path: 'user/profile', component: UserProfileComponent},
   {path: 'user/result', component:ResultComponent},
-  {path: 'about', component: AboutComponent}
+  {path: 'about', component: AboutComponent},
+  {path: 'admin/userlist', component: UserListComponent}
 ];
 
 @NgModule({

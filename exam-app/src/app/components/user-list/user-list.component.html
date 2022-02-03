@@ -1,0 +1,26 @@
+<div class="user-list-section">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">userid</th>
+                    <th scope="col">name</th>
+                    <th scope="col">gender</th>
+                    <th scope="col">email</th>
+                    <th scope="col">test-taken</th>
+                    <th scope="col">result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr scope="row" *ngFor="let user of users, let i=index">
+                    <td>{{i+1}} </td>
+                    <td>{{user.name}} </td>
+                    <td>{{user.gender}} </td>
+                    <td>{{user.email}} </td>
+                    <td>{{user.testTaken}} </td>
+                    <td>{{user.result}} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

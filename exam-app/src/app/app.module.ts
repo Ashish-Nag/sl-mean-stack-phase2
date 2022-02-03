@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ResultComponent } from './components/result/result.component';
 import { AboutComponent } from './components/about/about.component';
+import { UserListComponent } from './components/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AboutComponent } from './components/about/about.component';
     UserProfileComponent,
     LandingPageComponent,
     ResultComponent,
-    AboutComponent
+    AboutComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
