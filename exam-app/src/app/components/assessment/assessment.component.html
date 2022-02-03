@@ -1,18 +1,30 @@
-<div class="container">
-    <h4>No negative marking, attempt all questions</h4>
-    <form #examForm="ngForm" (ngSubmit)="validateAns(examForm)">
-        <div class="mb-3" *ngFor="let obj of questions, let i = index">
-            <p class="question"> {{i+1}}. {{obj.question}}</p>
-            <input type="radio" name="q{{i+1}}" value="{{obj.options[0]}}" ngModel required> {{obj.options[0]}}
-            <input type="radio" name="q{{i+1}}" value="{{obj.options[1]}}" ngModel required> {{obj.options[1]}}
-            <input type="radio" name="q{{i+1}}" value="{{obj.options[2]}}" ngModel required> {{obj.options[2]}}
-            <input type="radio" name="q{{i+1}}" value="{{obj.options[3]}}" ngModel required> {{obj.options[3]}}
+<div class="assessment-section">
 
+    <div class="container">
+        <p class="fst-italic text-white-50">No negative marking, attempt all questions</p>
+        <form #examForm="ngForm" (ngSubmit)="validateAns(examForm)">
+            <div class="questions" *ngFor="let obj of questions, let i = index">
+                <h6 class="question"> {{i+1}}. {{obj.question}}</h6>
+                <div class="options">
+                    <p><input type="radio" name="q{{i+1}}" value="{{obj.options[0]}}" ngModel required>
+                        <span>{{obj.options[0]}}</span>
+                    </p>
+                    <p><input type="radio" name="q{{i+1}}" value="{{obj.options[1]}}" ngModel required>
+                        <span>{{obj.options[1]}}</span>
+                    </p>
+                    <p><input type="radio" name="q{{i+1}}" value="{{obj.options[2]}}" ngModel required>
+                        <span>{{obj.options[2]}}</span>
+                    </p>
+                    <p><input type="radio" name="q{{i+1}}" value="{{obj.options[3]}}" ngModel required>
+                        <span>{{obj.options[3]}}</span>
+                    </p>
+                </div>
+            </div>
 
-        </div>
-
-        <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
-    </form>
+            <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="btn btn-secondary btn-lg mt-3">Submit</button>
+        </form>
+    </div>
 </div>
 
 <!-- Modal -->
@@ -23,8 +35,9 @@
                 <h5 class="modal-title" id="exampleModalLabel">Exam Result</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                {{finalMsg}}
+            <div class="modal-body" [style.background-color]="userPassOrFail ? 'green':'red'">
+                <h3>You Scored <span *ngIf="!userPassOrFail">only</span> {{percent}} percent!!</h3>
+                <p>{{finalMsg}}</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

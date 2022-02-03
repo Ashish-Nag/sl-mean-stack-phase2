@@ -12,6 +12,7 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ResultComponent } from './components/result/result.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResultComponent } from './components/result/result.component';
     HeaderComponent,
     UserProfileComponent,
     LandingPageComponent,
-    ResultComponent
+    ResultComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

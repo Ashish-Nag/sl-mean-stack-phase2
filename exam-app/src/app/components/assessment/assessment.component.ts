@@ -14,6 +14,7 @@ export class AssessmentComponent implements OnInit {
   wrong: number = 0;
   finalMsg: string;
   percent: number;
+  userPassOrFail: boolean;
   constructor(public questionService: QuestionsService) { } // Dependency injection for questions service
 
   ngOnInit(): void {
@@ -49,9 +50,14 @@ export class AssessmentComponent implements OnInit {
     ans.reset();
     this.percent = this.correct/10 *100 ;
     if(this.percent >= 80){
+      this.userPassOrFail = true;
       this.finalMsg = "Congratulations! You have passed the exam!";
     }else {
+      this.userPassOrFail = false;
       this.finalMsg = "OOPS! looks like you've had some bad luck, Try Again!";
     }
+    // resetting all the values 
+    this.correct = 0;
+    this.wrong = 0;
   }
 }

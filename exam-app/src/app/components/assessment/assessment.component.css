@@ -1,0 +1,26 @@
+.assessment-section {
+  position: relative;
+  padding: 6rem 0;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+
+.container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.521);
+  padding: 2rem 1rem;
+  border-radius: 1.5rem;
+}
+
+.container h6 {
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.options {
+  margin-left: 2rem;
+}
+.options p span {
+  margin-left: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}

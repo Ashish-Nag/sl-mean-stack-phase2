@@ -1,0 +1,11 @@
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+ul li a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
