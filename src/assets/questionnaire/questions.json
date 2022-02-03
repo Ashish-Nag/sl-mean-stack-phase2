@@ -1,0 +1,57 @@
+[
+  {
+    "question": "The cat and the dog have a _____ enemy in the rat.",
+    "options": ["same", "common", "mutual", "similar"],
+    "correctAns": "common"
+  },
+  {
+    "question": "Her thinking leans ______ democracy.",
+    "options": ["with", "for", "towards", "none of these"],
+    "correctAns": "towards"
+  },
+  {
+    "question": "He got too tired ______ over work.",
+    "options": ["because of", "for", "of", "none of these"],
+    "correctAns": "because of"
+  },
+  {
+    "question": "The building has been built ______ new plan.",
+    "options": ["accordance", "about", "becuase", "in accordance with"],
+    "correctAns": "in accordance with"
+  },
+  {
+    "question": "He crossed the broken bridge ______ warning.",
+    "options": ["in spite of", "on", "without", "none of these"],
+    "correctAns": "in spite of"
+  },
+  {
+    "question": "What part of database holds only one type of information?",
+    "options": ["report", "field", "file", "record"],
+    "correctAns": "field"
+  },
+  {
+    "question": "'OS' abbreviation usually means?",
+    "options": [
+      "order of significance",
+      "open software",
+      "operating system",
+      "optical sensor"
+    ],
+    "correctAns": "operating system"
+  },
+  {
+    "question": "'.MOV' file extension refers to what kind of file?",
+    "options": ["image", "animation/movie", "audio", "ms document"],
+    "correctAns": "animation/movie"
+  },
+  {
+    "question": "Which is a type of Electrically-Erasable Programmable Read-Only Memory?",
+    "options": ["flash", "fury", "FRAM", "flang"],
+    "correctAns": "flash"
+  },
+  {
+    "question": "Made from a variety of materials, such as carbon, which of the following resits the flow of current?",
+    "options": ["capacitor", "conductor", "resistor", "inductor"],
+    "correctAns": "resistor"
+  }
+]

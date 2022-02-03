@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Sign Up here</h2>
+    <form #signUpForm="ngForm" (ngSubmit)="addUser(signUpForm)">
+        <div class="mb-3">
+            <label for="usersName">Name</label>
+            <input type="text" id="usersName" name="usersName" ngModel required />
+        </div>
+        <div class="mb-3">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" ngModel required />
+        </div>
+        <div class="mb-3">
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" ngModel required />Male
+            <input type="radio" name="gender" value="female" ngModel required />Female
+        </div>
+        <div class="mb-3">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" ngModel required />
+        </div>
+        <div class="mb-3">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" ngModel required />
+        </div>
+
+        <input type="submit" value="Register" [disabled]="signUpForm.invalid">
+    </form>
+</div>
