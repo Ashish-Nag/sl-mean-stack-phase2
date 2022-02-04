@@ -2,7 +2,10 @@ const repo = require('../repositories/user');
 
 exports.getUser = (req, res) => {
     console.log("GET user method called");
-    repo.getAll(user => res.send(user));
+    repo.getAll(user => {
+        console.log(user);
+        res.send(user)
+    });
 }
 
 exports.postUser = (req, res) => {

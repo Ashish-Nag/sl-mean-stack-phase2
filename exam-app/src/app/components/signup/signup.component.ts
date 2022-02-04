@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
+import { generateId } from 'src/app/services/generateUniqueId.service';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -24,6 +25,7 @@ export class SignupComponent implements OnInit {
       return;
     }else {
       this.passwordMisMatch = false;
+      this.userObj.userId = generateId(10);
       this.userObj.name = userDetails.name;
       this.userObj.gender = userDetails.gender;
       this.userObj.email = userDetails.email;

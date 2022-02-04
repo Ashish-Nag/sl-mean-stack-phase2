@@ -1,3 +1,52 @@
 <div class="about-section">
-
+    <div class="container-wrapper">
+        <div class="container text-white-50" style="letter-spacing: 1px;">
+            <h2 class="mb-3">About the Exam App</h2>
+            <div class="">
+                <p class="mt-3">The first step for this app was to create the following components: </p>
+                <ol class="mb-3">
+                    <li>Header Component: contains the navigation bar.</li>
+                    <li>Landing Page Component: the first page when a user visits the website.</li>
+                    <li>Login Component: a login page for users to log in.</li>
+                    <li>Signup Component: a Signup page for new users to register.</li>
+                    <li>Result Component: a page where the user can check the results of the exam.</li>
+                    <li>User-profile Component: Where the user can change his profile details.</li>
+                    <li>User-list Component: Where the Admin can check all the users' details including their exam
+                        results. </li>
+                </ol>
+                <p class="mb-3">Once all the components were styled and created the next step was to populate the
+                    Assessment Component.
+                    <span style="display: block; font-size: 0.9rem;" class="ms-3 fst-italic">This was achieved by
+                        storing a json
+                        file
+                        containing the
+                        Questions,
+                        Options and the
+                        Correct-Answers, in the assets folder, and then the question service was used to populate the
+                        Assessment Component. </span>
+                </p>
+                <p class="mb-3">After populating the Assessment component UI, form validation and results display were
+                    configured using appropriate functions in the .component.ts files. </p>
+                <p class="mb-3">The login and Signup components use Template Driven Forms for validation. </p>
+                <p class="mb-3">The Signup Component uses the api service to create and store new users in the database.
+                    <span class="fst-italic ms-3" style="display: block; font-size: 0.9rem;">On successful creation of
+                        new user the user is
+                        directly redirected to
+                        the user-list component, where all the users' details can be seen.</span>
+                </p>
+                <p class="mb-3">The API has been set up to run in port 300, and can post new user objects and get all
+                    the stored users.</p>
+                <h5>Future Plans for the app</h5>
+                <ol style="font-size: 0.9rem; letter-spacing: 1px;">
+                    <li>Configuring the Update and Delete methods on the API.</li>
+                    <li>Using Token for verification to ensure only signed in person could take the test and the test
+                        can be taken only once.</li>
+                    <li>Configuring Results page to be accessable only after signing in.</li>
+                    <li>Configuring Time limit or clock to ensure automatic submission once time runs out.</li>
+                    <li>Styling the questions so that only one is visible at once. </li>
+                    <li>Configuring Admin access, admin can delete users, or grant permission to retake the test.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
 </div>
